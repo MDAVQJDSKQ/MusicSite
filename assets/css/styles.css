@@ -1,0 +1,105 @@
+/* Import the Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2a2a2a; /* Dark grey background */
+    color: #d3d3d3; /* Lighter text color */
+    margin: 0 0 0 20px; /* top right bottom left */
+    padding: 0;
+    line-height: 1.5; /* Ensures good readability */
+}
+
+a {
+    color: #5da9e9; /* Light blue for links */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+/* Header and Footer */
+header, footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f; /* Slightly darker than body */
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/* Navigation Menu (if you have one) */
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #5da9e9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #4682b4; /* A bit darker blue on hover */
+}
+
+/* Form Styles */
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: none;  /* Initially hidden */
+}
