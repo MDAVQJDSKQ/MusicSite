@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebsite - Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/login.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to the blog</h1>
-    <p><a href="login.html">Login</a></p>
+    <h1>Welcome</h1>
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Login</button>
+    </form>
+    
+    <div id="errorMessage" class="error"></div>
+
+    <!-- React and ReactDOM scripts -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
 </body>
 </html>

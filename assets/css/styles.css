@@ -97,9 +97,27 @@ form input[type="text"], form input[type="password"] {
 
 
 
+
 .error {
     color: red;
     font-weight: bold;
     margin-top: 10px;
     display: none;  /* Initially hidden */
+}
+
+
+
+/* React components*/
+.blog-post {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+}
+
+.blog-post a {
+    color: #0077cc;
+    text-decoration: none;
 }
