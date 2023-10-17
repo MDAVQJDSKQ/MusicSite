@@ -7,7 +7,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const users = {
         john: 'johnpass',
         jane: 'janepass'
-        // ... add more users as needed
     };
     
     if (users[username] && users[username] === password) {
